@@ -1,3 +1,5 @@
+#!/bin/ruby
+
 require 'json'
 require 'optparse'
 require 'set'
