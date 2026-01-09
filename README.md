@@ -1,7 +1,7 @@
 This is mostly intended to run on my machine but it should be usable outside as I have committed the data too.
 
 To use it, forst you need a file with all the binary packages that needs to be rebuilt, for example:
-`urpmf --sourcerpm --requires libperl.so.5 | cut -d: -f1 | sort -u > todo.perl`
+`urpmf --requires libperl.so.5 | cut -d: -f1 | sort -u > todo.perl`
 
 Then you can call `ruby order.rb todo.perl` which will display something like:
 ```
