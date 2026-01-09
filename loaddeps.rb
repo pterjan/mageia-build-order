@@ -10,7 +10,7 @@ deps = {}
 i=0
 Dir.glob("#{ARGV[0]}/log/*/rpm_qa.*.0.*.log"){|f|
   d=load_deps(f).to_set
-  s=f.split(/\//)[6].sub(/-[^-]*-[^-]*$/, '')
+  s=f.split(/\//)[7].sub(/-[^-]*-[^-]*$/, '')
   print "\rProcessing package #{i}"
   i+=1
   if basedeps==nil then
