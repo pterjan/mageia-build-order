@@ -16,7 +16,7 @@ OptionParser.new do |opts|
     $options[:verbose] = v
   end
 
-  opts.on("--urpmf_options OPTIONS", String, "Set options to urpmf when mapping binaties to sourcerpm") do |f|
+  opts.on("--urpmf_options OPTIONS", String, "Set options to urpmf when mapping binaries to sourcerpm") do |f|
     $options[:urpmf_options] = f
   end
 
